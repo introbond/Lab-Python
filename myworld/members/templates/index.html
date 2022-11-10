@@ -8,9 +8,10 @@
 </head>
 <body>
     <h1> Members </h1>
-    <table>
+    <table border="1">
         {%for i in mymembers %}
             <tr>
+                <td> <a href="update/{{ i.id }}"> update {{ i.id }} </a> </td>
                 <td>{{ i.id }}</td>
                 <td>{{ i.firstname }}</td>
                 <td>{{ i.lastname }}</td>
